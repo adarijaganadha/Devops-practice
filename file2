@@ -1,0 +1,5 @@
+A local repository (local repo) in the context of Git is a copy of a Git repository that resides on your local machine.
+
+It contains all the files, history, branches, and configurations related to a particular project.
+
+Setting up a local repository involves initializing a new repository or cloning an existing one from a remote source.
