@@ -1,23 +1,13 @@
-A local repository (local repo) in the context of Git is a copy of a Git repository that resides on your local machine.
 
-It contains all the files, history, branches, and configurations related to a particular project.
+git log:
+The git log command is used to view the commit history of a Git repository.
 
-Setting up a local repository involves initializing a new repository or cloning an existing one from a remote source.
-Setting Up a Local Repository
-1. Initializing a New Repository:
-Navigate to Your Project Directory using git bash
+It provides a detailed list of all the commits, showing information such as the commit hash, author, date, and commit message.
 
-cd
+Here are some basic and advanced ways to use git log:
 
-Initialize the Repository
+git log ==> simple log
 
-git init
+git log --oneline ==> Short Log
 
-execute "ls -la" command on git bash
-
-If the folder contains the .git folder then intilaization successful
-
-2. Cloning an Existing Repository
-Create Repo in Github
-
-Clone the repo we will discuss more later about this
+git log -n 3 ==> Limit the Number of Commits
