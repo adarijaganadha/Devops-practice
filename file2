@@ -68,3 +68,14 @@ Ex: Git status
 
 git reset:
 After doing few changes, you may decide to remove these changes. The Git reset command is used to reset or revert changes. We can perform three different types of reset operations.
+git log:
+The git log command is used to view the commit history of a Git repository.
+
+It provides a detailed list of all the commits, showing information such as the commit hash, author, date, and commit message.
+
+Here are some basic and advanced ways to use git log:
+
+git log ==> simple log
+git log --oneline ==> Short Log
+
+git log -n 3 ==> Limit the Number of Commits
