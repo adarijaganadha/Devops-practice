@@ -1,13 +1,70 @@
+Local Repository
+A local repository (local repo) in the context of Git is a copy of a Git repository that resides on your local machine.
 
-git log:
-The git log command is used to view the commit history of a Git repository.
+It contains all the files, history, branches, and configurations related to a particular project.
 
-It provides a detailed list of all the commits, showing information such as the commit hash, author, date, and commit message.
+Setting up a local repository involves initializing a new repository or cloning an existing one from a remote source.
 
-Here are some basic and advanced ways to use git log:
+Setting Up a Local Repository
+1. Initializing a New Repository:
+Navigate to Your Project Directory using git bash
 
-git log ==> simple log
+cd
 
-git log --oneline ==> Short Log
+Initialize the Repository
 
-git log -n 3 ==> Limit the Number of Commits
+git init
+
+execute "ls -la" command on git bash
+
+If the folder contains the .git folder then intilaization successful
+
+2. Cloning an Existing Repository
+Create Repo in Github
+
+Clone the repo we will discuss more later about this
+
+Git Architecure
+1. Working Directory
+The working directory is the directory on your local machine where your project files are located. This is where you edit, create, or delete files.
+
+2. Staging Area (Index)
+The staging area (or index) is a file, generally hidden, that resides in your Git directory.
+
+It holds the changes that will be included in the next commit.
+
+Think of it as a "prepare area" where you can review and select changes before committing them.
+
+3. Local Repository
+The local repository is the actual database that Git uses to keep track of all your project’s history.
+
+It stores all commits and snapshots of your project’s files.
+
+git init:
+This Git init command converts a directory into an empty repository. This is the initial step you need to take to build a repository.
+
+Once you run git init, you will be able to add and commit files and directories.
+
+git add:
+This command allows you to add files in the Git staging area. The file must be added to the index of Git before being available to commit to any particular repository.
+
+You can use this command to add directories, files, etc.
+
+example: Git add . ==> . means adding all modified and newly added files.
+
+Git add ==> specificly moving a file
+
+git commit:
+The commit command in Git allows you to track the changes in the files in a local repository.
+
+Each commit has its own unique ID for reference.
+
+Ex: git commit -m "Name of the message"
+
+git status:
+The git status command returns the present state of a repository, like if the file is in the staging area but has not been committed.
+
+Ex: Git status
+
+git reset:
+After doing few changes, you may decide to remove these changes. The Git reset command is used to reset or revert changes. We can perform three different types of reset operations.
